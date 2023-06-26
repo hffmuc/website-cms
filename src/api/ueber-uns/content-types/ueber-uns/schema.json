@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "ueber_unss",
+  "info": {
+    "singularName": "ueber-uns",
+    "pluralName": "ueber-unss",
+    "displayName": "Über Uns"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    },
+    "Bild": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

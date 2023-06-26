@@ -55,3 +55,9 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+---
+
+_Common Problems_
+
+I had issues with installing sqlite3 using npm on Mac. Was solved by ensuring that parent folders do not contain spaces.
