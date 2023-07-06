@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ai_tools",
+  "info": {
+    "singularName": "ai-tool",
+    "pluralName": "ai-tools",
+    "displayName": "AI Tool"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "toolName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "toolImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "developers": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "toolTags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tool-tag.tool-tag",
+      "inversedBy": "aiTools"
+    }
+  }
+}
