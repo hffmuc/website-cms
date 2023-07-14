@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tutorials",
+  "info": {
+    "singularName": "tutorial",
+    "pluralName": "tutorials",
+    "displayName": "tutorial",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    },
+    "embedLink": {
+      "type": "string",
+      "default": "https://www.youtube.com/embed/q7Uk-cD8gG4",
+      "required": true
+    },
+    "tutorial_group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tutorial-group.tutorial-group",
+      "inversedBy": "tutorials"
+    }
+  }
+}

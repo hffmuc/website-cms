@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ai-tool",
     "pluralName": "ai-tools",
-    "displayName": "AI Tool"
+    "displayName": "AI Tool",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,12 +18,12 @@
       "unique": true
     },
     "toolImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "developers": {
       "type": "string"
@@ -36,6 +37,21 @@
       "relation": "manyToMany",
       "target": "api::tool-tag.tool-tag",
       "inversedBy": "aiTools"
+    },
+    "webToolLink": {
+      "type": "string",
+      "regex": "^(https?|ftp)://[^\\s/$.?#].[^\\s]*$"
+    },
+    "githubLink": {
+      "type": "string",
+      "regex": "^(https?|ftp)://[^\\s/$.?#].[^\\s]*$"
+    },
+    "localAppLink": {
+      "type": "string",
+      "regex": "^(https?|ftp)://[^\\s/$.?#].[^\\s]*$"
+    },
+    "internalInfo": {
+      "type": "richtext"
     }
   }
 }
