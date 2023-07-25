@@ -4,7 +4,8 @@
   "info": {
     "singularName": "news",
     "pluralName": "newscollection",
-    "displayName": "News"
+    "displayName": "News",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,12 +21,12 @@
       "required": false
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "link": {
       "type": "string"
