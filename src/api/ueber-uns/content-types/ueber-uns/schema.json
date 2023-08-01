@@ -4,25 +4,30 @@
   "info": {
     "singularName": "ueber-uns",
     "pluralName": "ueber-unss",
-    "displayName": "Über Uns"
+    "displayName": "Über Uns",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Content": {
+    "content": {
       "type": "richtext"
     },
-    "Bild": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "our_team": {
+      "type": "richtext"
     }
   }
 }
