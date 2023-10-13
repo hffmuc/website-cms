@@ -1,3 +1,13 @@
+# KI Lab Website Headless CMS
+We use Strapi for the AI Lab's CMS. 
+
+## Setup
+After cloning, you need to add a .env file according to the example given in .env.example.
+
+The database will be empty after cloning. If you have an existing database you can transfer it according to these instructions: [https://docs.strapi.io/dev-docs/data-management/transfer](https://docs.strapi.io/dev-docs/data-management/transfer).
+
+After that, please follow the instructions below.
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
