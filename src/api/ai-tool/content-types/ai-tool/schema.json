@@ -52,6 +52,14 @@
     },
     "internalInfo": {
       "type": "richtext"
+    },
+    "softwareLink": {
+      "type": "string",
+      "regex": "^(https?|ftp)://[^\\s/$.?#].[^\\s]*$"
+    },
+    "googleCollabLink": {
+      "type": "string",
+      "regex": "^(https?|ftp)://[^\\s/$.?#].[^\\s]*$"
     }
   }
 }
