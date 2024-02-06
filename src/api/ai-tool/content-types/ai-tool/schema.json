@@ -60,6 +60,10 @@
     "googleCollabLink": {
       "type": "string",
       "regex": "^(https?|ftp)://[^\\s/$.?#].[^\\s]*$"
+    },
+    "available_at_KI_Lab": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
