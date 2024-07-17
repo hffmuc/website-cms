@@ -45,9 +45,6 @@
     },
     "link": {
       "type": "string"
-    },
-    "nextDate": {
-      "type": "string"
     }
   }
 }
