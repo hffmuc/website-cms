@@ -20,9 +20,6 @@
     "location": {
       "type": "string"
     },
-    "yearly": {
-      "type": "boolean"
-    },
     "shortDescription": {
       "type": "richtext"
     },
