@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "festivals",
+  "info": {
+    "singularName": "festival",
+    "pluralName": "festivals",
+    "displayName": "festivals",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "yearly": {
+      "type": "boolean"
+    },
+    "shortDescription": {
+      "type": "richtext"
+    },
+    "month": {
+      "type": "enumeration",
+      "enum": [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december"
+      ]
+    },
+    "link": {
+      "type": "string"
+    },
+    "nextDate": {
+      "type": "string"
+    }
+  }
+}

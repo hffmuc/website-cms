@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ki_filmes",
+  "info": {
+    "singularName": "ki-filme",
+    "pluralName": "ki-filmes",
+    "displayName": "KI Filme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "filmtitle": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "releaseYear": {
+      "type": "integer"
+    },
+    "filmmaker": {
+      "type": "string"
+    },
+    "additionalInformation": {
+      "type": "richtext"
+    },
+    "videoLink": {
+      "type": "string"
+    },
+    "length": {
+      "type": "integer"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
