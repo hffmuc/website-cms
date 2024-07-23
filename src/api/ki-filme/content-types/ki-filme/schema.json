@@ -30,7 +30,8 @@
       "type": "richtext"
     },
     "videoLink": {
-      "type": "string"
+      "type": "string",
+      "regex": "(https:\\/\\/vimeo\\.com\\/\\d+)|(https:\\/\\/www\\.youtube\\.com\\/embed\\/[A-Za-z0-9_-]+(\\?si=[A-Za-z0-9_-]+)?)"
     },
     "length": {
       "type": "integer"

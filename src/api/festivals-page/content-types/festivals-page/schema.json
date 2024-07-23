@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "festivals_pages",
+  "info": {
+    "singularName": "festivals-page",
+    "pluralName": "festivals-pages",
+    "displayName": "Festivals Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "introduction": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "film_pages",
+  "info": {
+    "singularName": "film-page",
+    "pluralName": "film-pages",
+    "displayName": "Film Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Introduction": {
+      "type": "richtext"
+    }
+  }
+}
