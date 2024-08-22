@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ki_medienprojekts",
+  "info": {
+    "singularName": "ki-medienprojekt",
+    "pluralName": "ki-medienprojekts",
+    "displayName": "KI Medienprojekt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "releaseYear": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "videoLink": {
+      "type": "string"
+    },
+    "artists": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "HFFproject": {
+      "type": "boolean"
+    },
+    "videoLink2": {
+      "type": "string"
+    }
+  }
+}

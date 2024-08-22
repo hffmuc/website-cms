@@ -38,6 +38,9 @@
     },
     "link": {
       "type": "string"
+    },
+    "HFFproject": {
+      "type": "boolean"
     }
   }
 }
