@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "medienprojekte_pages",
+  "info": {
+    "singularName": "medienprojekte-page",
+    "pluralName": "medienprojekte-pages",
+    "displayName": "Medienprojekte Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Introduction": {
+      "type": "richtext"
+    }
+  }
+}

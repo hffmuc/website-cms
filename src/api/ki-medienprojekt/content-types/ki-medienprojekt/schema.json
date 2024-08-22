@@ -17,10 +17,13 @@
       "unique": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "releaseYear": {
-      "type": "integer"
+      "type": "integer",
+      "min": 1900,
+      "max": 2100
     },
     "image": {
       "type": "media",
@@ -31,10 +34,12 @@
       ]
     },
     "videoLink": {
-      "type": "string"
+      "type": "string",
+      "regex": "(https:\\/\\/vimeo\\.com\\/\\d+)|(https:\\/\\/www\\.youtube\\.com\\/embed\\/[A-Za-z0-9_-]+(\\?si=[A-Za-z0-9_-]+)?)"
     },
     "artists": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "link": {
       "type": "string"
@@ -43,7 +48,8 @@
       "type": "boolean"
     },
     "videoLink2": {
-      "type": "string"
+      "type": "string",
+      "regex": "(https:\\/\\/vimeo\\.com\\/\\d+)|(https:\\/\\/www\\.youtube\\.com\\/embed\\/[A-Za-z0-9_-]+(\\?si=[A-Za-z0-9_-]+)?)"
     }
   }
 }
