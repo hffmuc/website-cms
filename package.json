@@ -10,15 +10,17 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-color-picker": "^4.11.4",
-    "@strapi/plugin-graphql": "^4.11.1",
-    "@strapi/plugin-i18n": "4.11.1",
-    "@strapi/plugin-users-permissions": "4.11.1",
-    "@strapi/strapi": "4.11.1",
-    "better-sqlite3": "8.0.1",
+    "@strapi/plugin-color-picker": "5.16.1",
+    "@strapi/plugin-graphql": "5.16.1",
+    "@strapi/plugin-users-permissions": "5.16.1",
+    "@strapi/strapi": "5.16.1",
+    "better-sqlite3": "11.3.0",
     "pm2": "^5.3.0",
     "sharp": "^0.32.1",
-    "sqlite3": "^5.1.6"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
   },
   "author": {
     "name": "KI Lab HFF"
