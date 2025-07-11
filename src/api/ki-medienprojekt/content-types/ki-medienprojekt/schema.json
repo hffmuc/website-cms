@@ -10,23 +10,47 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
       "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "unique": true
     },
     "description": {
       "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "required": true
     },
     "releaseYear": {
       "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "min": 1900,
       "max": 2100
     },
     "image": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "multiple": false,
       "required": false,
       "allowedTypes": [
@@ -35,20 +59,45 @@
     },
     "videoLink": {
       "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "regex": "(https:\\/\\/vimeo\\.com\\/\\d+)|(https:\\/\\/www\\.youtube\\.com\\/embed\\/[A-Za-z0-9_-]+(\\?si=[A-Za-z0-9_-]+)?)"
     },
     "artists": {
       "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "required": true
     },
     "link": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "HFFproject": {
-      "type": "boolean"
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "videoLink2": {
       "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "regex": "(https:\\/\\/vimeo\\.com\\/\\d+)|(https:\\/\\/www\\.youtube\\.com\\/embed\\/[A-Za-z0-9_-]+(\\?si=[A-Za-z0-9_-]+)?)"
     }
   }

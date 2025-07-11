@@ -10,18 +10,32 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
       "type": "string",
-      "maxLength": 20,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "minLength": 1,
+      "maxLength": 20,
       "required": true
     },
     "color": {
       "type": "customField",
-      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
-      "customField": "plugin::color-picker.color"
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "customField": "plugin::color-picker.color",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
     },
     "aiTools": {
       "type": "relation",
