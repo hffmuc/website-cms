@@ -10,30 +10,16 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "minLength": 1,
       "maxLength": 20,
       "required": true
     },
     "color": {
       "type": "customField",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "customField": "plugin::color-picker.color",
       "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
     },
