@@ -1249,6 +1249,43 @@ export interface ApiToolTagToolTag extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiToolsPageToolsPage extends Struct.SingleTypeSchema {
+  collectionName: 'tools_pages';
+  info: {
+    displayName: 'Tools Page';
+    pluralName: 'tools-pages';
+    singularName: 'tools-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    introduction: Schema.Attribute.RichText &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::tools-page.tools-page'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTutorialGroupTutorialGroup
   extends Struct.CollectionTypeSchema {
   collectionName: 'tutorial_groups';
@@ -1955,6 +1992,7 @@ declare module '@strapi/strapi' {
       'api::news-carousel.news-carousel': ApiNewsCarouselNewsCarousel;
       'api::news.news': ApiNewsNews;
       'api::tool-tag.tool-tag': ApiToolTagToolTag;
+      'api::tools-page.tools-page': ApiToolsPageToolsPage;
       'api::tutorial-group.tutorial-group': ApiTutorialGroupTutorialGroup;
       'api::tutorial-page.tutorial-page': ApiTutorialPageTutorialPage;
       'api::tutorial.tutorial': ApiTutorialTutorial;
