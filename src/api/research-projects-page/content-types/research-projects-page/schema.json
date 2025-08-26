@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "research_projects_pages",
+  "info": {
+    "singularName": "research-projects-page",
+    "pluralName": "research-projects-pages",
+    "displayName": "Research Projects Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "introduction": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

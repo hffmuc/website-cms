@@ -1220,6 +1220,122 @@ export interface ApiNewsNews extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiResearchProjectResearchProject
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'research_projects';
+  info: {
+    displayName: 'Research Project';
+    pluralName: 'research-projects';
+    singularName: 'research-project';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    authors: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    conference: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    image: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::research-project.research-project'
+    >;
+    name: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    paper: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    year: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+  };
+}
+
+export interface ApiResearchProjectsPageResearchProjectsPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'research_projects_pages';
+  info: {
+    displayName: 'Research Projects Page';
+    pluralName: 'research-projects-pages';
+    singularName: 'research-projects-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    introduction: Schema.Attribute.RichText &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::research-projects-page.research-projects-page'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiToolTagToolTag extends Struct.CollectionTypeSchema {
   collectionName: 'tool_tags';
   info: {
@@ -2000,6 +2116,8 @@ declare module '@strapi/strapi' {
       'api::medienprojekte-page.medienprojekte-page': ApiMedienprojektePageMedienprojektePage;
       'api::news-carousel.news-carousel': ApiNewsCarouselNewsCarousel;
       'api::news.news': ApiNewsNews;
+      'api::research-project.research-project': ApiResearchProjectResearchProject;
+      'api::research-projects-page.research-projects-page': ApiResearchProjectsPageResearchProjectsPage;
       'api::tool-tag.tool-tag': ApiToolTagToolTag;
       'api::tools-page.tools-page': ApiToolsPageToolsPage;
       'api::tutorial-group.tutorial-group': ApiTutorialGroupTutorialGroup;
