@@ -123,6 +123,53 @@
         }
       },
       "default": false
+    },
+    "provider": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "providerCountry": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "licenseType": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "enum": [
+        "open_source",
+        "closed",
+        "mixed"
+      ]
+    },
+    "runsLocally": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": false
+    },
+    "licensedTrainingData": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": false
     }
   }
 }
